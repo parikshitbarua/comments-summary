@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modern Basic Website</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open-Sans:wght@400;700&display=swap">
+    <script src="./landing-page-script.js" type="text/javascript" defer></script>
     <style>
         body {
             font-family: 'open-sans', sans-serif;
@@ -72,15 +73,15 @@
 <section class="section">
     <div class="container">
         <label>
-            <textarea placeholder="Paste or type your sentences here"></textarea>
+            <textarea placeholder="Paste or type your sentences here" id="inputTextArea"></textarea>
         </label>
-        <button>Summarize</button>
+        <button id="summarize-button">Summarize</button>
     </div>
 </section>
 <section class="section">
     <div class="container">
         <label>
-            <textarea class="summary" placeholder="Summary of user-entered text will appear here" readonly></textarea>
+            <textarea class="summary" placeholder="Summary of user-entered text will appear here" id="outputTextArea" readonly></textarea>
         </label>
     </div>
 </section>
